@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #2c3e50; /* Dark blue-gray */
+    color: #ecf0f1; /* Light gray for text */
+    overflow: hidden;
+}
+
+.calculator {
+    background-color: #34495e; /* Slightly lighter dark blue-gray */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 320px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.display {
+    background-color: #232f3e; /* Even darker blue-gray */
+    color: #ecf0f1;
+    font-size: 2.8em;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: auto; /* Allow horizontal scrolling for long numbers */
+    white-space: nowrap;
+    user-select: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    background-color: #4a657c; /* Medium blue-gray */
+    color: #ecf0f1;
+    border: none;
+    padding: 20px 0;
+    font-size: 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    outline: none;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: #5b7996;
+}
+
+.btn:active {
+    transform: scale(0.98);
+    background-color: #6a8aad;
+}
+
+.operator {
+    background-color: #f39c12; /* Orange */
+    color: #fff;
+}
+
+.operator:hover {
+    background-color: #e67e22;
+}
+
+.operator:active {
+    background-color: #d35400;
+}
+
+.clear {
+    background-color: #e74c3c; /* Red */
+}
+
+.clear:hover {
+    background-color: #c0392b;
+}
+
+.clear:active {
+    background-color: #a93226;
+}
+
+.equals {
+    background-color: #27ae60; /* Green */
+    grid-column: span 2;
+}
+
+.equals:hover {
+    background-color: #2ecc71;
+}
+
+.equals:active {
+    background-color: #28b463;
+}
+
+.zero {
+    grid-column: span 1;
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        padding: 15px;
+        width: 95%;
+    }
+    .btn {
+        font-size: 1.3em;
+        padding: 15px 0;
+    }
+    .display {
+        font-size: 2.2em;
+        padding: 15px;
+    }
+}
