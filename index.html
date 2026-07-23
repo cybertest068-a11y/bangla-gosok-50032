@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Bangla Gosok</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" href="./icon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="btn clear" data-action="clear">AC</button>
+            <button class="btn" data-action="del">DEL</button>
+            <button class="btn operator" data-value="%">%</button>
+            <button class="btn operator" data-value="/">÷</button>
+
+            <button class="btn" data-value="৭">৭</button>
+            <button class="btn" data-value="৮">৮</button>
+            <button class="btn" data-value="৯">৯</button>
+            <button class="btn operator" data-value="*">×</button>
+
+            <button class="btn" data-value="৪">৪</button>
+            <button class="btn" data-value="৫">৫</button>
+            <button class="btn" data-value="৬">৬</button>
+            <button class="btn operator" data-value="-">―</button>
+
+            <button class="btn" data-value="১">১</button>
+            <button class="btn" data-value="২">২</button>
+            <button class="btn" data-value="৩">৩</button>
+            <button class="btn operator" data-value="+">+</button>
+
+            <button class="btn zero" data-value="০">০</button>
+            <button class="btn" data-value=".">.</button>
+            <button class="btn equals" data-action="calculate">=</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
